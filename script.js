@@ -4,7 +4,7 @@ function initialize(){
         success: function(data){
             console.log(data);
             for(let i = 0; i <= 3; i++){
-                document.querySelector('.nav-text').innerHTML = data.menuOptions[i];
+                document.querySelector('.nav-text').innerHTML += data.menuOptions[i];
             }
             document.querySelector('.card-title').innerHTML = data.info.heading;
             document.querySelector('.card-text').innerHTML = data.info.description;
@@ -23,7 +23,7 @@ function english(){
         success: function(data){
             console.log(data);
             for(let i = 0; i <= 3; i++){
-                document.querySelector('.nav-text').innerHTML = data.menuOptions[i];
+                document.querySelector('.nav-text').innerHTML += data.menuOptions[i];
             }
             document.querySelector('.card-title').innerHTML = data.info.heading;
             document.querySelector('.card-text').innerHTML = data.info.description;
@@ -42,7 +42,7 @@ function urdu(){
         success: function(data){
             console.log(data);
             for(let i = 0; i <= 3; i++){
-                document.querySelector('.nav-text').innerHTML = data.menuOptions[i];
+                document.querySelector('.nav-text').innerHTML += data.menuOptions[i];
             }
             document.querySelector('.card-title').innerHTML = data.info.heading;
             document.querySelector('.card-text').innerHTML = data.info.description;
@@ -61,7 +61,7 @@ function chinese(){
         success: function(data){
             console.log(data);
             for(let i = 0; i <= 3; i++){
-                document.querySelector('.nav-text').innerHTML = data.menuOptions[i];
+                document.querySelector('.nav-text').innerHTML += data.menuOptions[i];
             }
             document.querySelector('.card-title').innerHTML = data.info.heading;
             document.querySelector('.card-text').innerHTML = data.info.description;
